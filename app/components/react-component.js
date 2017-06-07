@@ -1,19 +1,14 @@
 import Ember from 'ember';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Capture from './capture/index.jsx';
 
 let { get } = Ember;
-
-class Hello extends React.Component {
-  render() {
-    return React.createElement('div', null, `Hello ${this.props.toWhat}`);
-  }
-}
 
 const ReactComponent = Ember.Component.extend({
   didRender: function() {
     ReactDOM.render( React.createElement(
-      Hello, {toWhat: 'World'}, null
+      Capture, { name : 'Rajib'}, null
       ), get(this, 'element'));
   },
 
