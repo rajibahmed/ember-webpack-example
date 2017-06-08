@@ -23,6 +23,9 @@
     "components-ember": "https://github.com/components/ember/tarball/2.2.0",
     "handlebars": "^4.0.5",
     "jquery": "2.1.0",
+    "material-ui": "^0.18.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "todomvc-app-css": "^2.0.4"
   }
 }
