@@ -1,21 +1,13 @@
 import React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {RaisedButton} from 'material-ui';
+import {Button} from '@klarna/bubble-ui/lib';
 
 export default class Capture extends React.Component {
-	constructor(props) {
-		super(props);
+	showMessage() {
+		window.alert(this.props.name);
 	}
-
-	showName() {
-		window.alert(this.props.name);		
-	}
-
   render() {
 		return (
-			<MuiThemeProvider>
-				<RaisedButton label="Default" onClick={ this.showName.bind(this) } />
-			</MuiThemeProvider>
+				<Button.Primary onClick={this.showMessage.bind(this)} >Something</Button.Primary>
 		)
   }
 }

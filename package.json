@@ -4,7 +4,8 @@
   "description": "an attempt to run ember with webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack "
   },
   "author": "Tulio Ornelas <ornelas.tulio@gmail.com>",
   "license": "MIT",
@@ -20,6 +21,7 @@
     "webpack": "^1.12.11"
   },
   "dependencies": {
+    "@klarna/bubble-ui": "^0.1.7",
     "components-ember": "https://github.com/components/ember/tarball/2.2.0",
     "handlebars": "^4.0.5",
     "jquery": "2.1.0",
